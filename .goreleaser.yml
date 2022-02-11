@@ -7,7 +7,7 @@ before:
     - mkdir -p xcaddy-build
     - cp cmd/xcaddy/main.go xcaddy-build/main.go
     - cp ./go.mod xcaddy-build/go.mod
-    - sed -i.bkp 's|github.com/caddyserver/xcaddy|xcaddy|g' ./xcaddy-build/go.mod
+    - sed -i.bkp 's|github.com/BitWuehler/xcaddy|xcaddy|g' ./xcaddy-build/go.mod
     # GoReleaser doesn't seem to offer {{.Tag}} at this stage, so we have to embed it into the env
     # so we run: TAG=$(git describe --abbrev=0) goreleaser release --rm-dist --skip-publish --skip-validate
     - go mod edit -require=github.com/caddyserver/xcaddy@{{.Env.TAG}} ./xcaddy-build/go.mod
