@@ -89,7 +89,7 @@ nfpms:
 
 release:
   github:
-    owner: caddyserver
+    owner: BitWuehler
     name: xcaddy
   draft: false
   prerelease: auto
