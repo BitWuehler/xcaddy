@@ -269,5 +269,5 @@ const (
 	// used for temporary folder paths.
 	yearMonthDayHourMin = "2006-01-02-1504"
 
-	defaultCaddyModulePath = "github.com/caddyserver/caddy"
+	defaultCaddyModulePath = "github.com/Bitwuehler/caddy"
 )
